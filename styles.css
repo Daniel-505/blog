@@ -1,0 +1,104 @@
+header{
+    background: #84ebfd;
+    text-align: center;
+    padding: 24px;
+  }
+  
+  .contacto {
+    background: #64c1d1;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .fotos{ 
+    width: 150px;
+    height: 140px;
+    padding: 24px;
+    margin-top: 140px;
+    margin-left: 50px;
+    
+  }
+  
+  .conteiner{
+    background: #84f5f5;
+    margin-left: 340px;
+    margin-right: 140px;
+    margin-top: 140px;
+    margin-inline: 150px;
+    padding: 1px; 
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+  }
+  
+  .square-background {
+    background-color: #9cd3ec; /* Color de fondo */
+    margin-top: 40px;
+    width: 300px; /* Ancho del cuadrado */
+    height: 150px; /* Alto del cuadrado */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    display: flex; /* Flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px; /* Espacio interno */
+    overflow: hidden; /* Oculta contenido desbordado */
+    position: relative; /* Necesario para la animación */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  }
+  
+  .image {
+    width: 140px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+  
+  }
+  
+  .description {
+    font-size: 16px; /* Tamaño del texto */
+    margin: 0; /* Elimina márgenes */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeIn 0.5s forwards 0.5s; /* Animación de texto */
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px); /* Desplazamiento inicial */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Desplazamiento final */
+    }
+  }
+  
+  /* Efecto hover */
+  .square-background:hover {
+    transform: scale(1.05); /* Escala al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+  }
+  
+  .alinear {
+    display: flex; /* Usamos flexbox para alinear en fila */
+    justify-content: center; /* Centra los cuadrados horizontalmente */
+    gap: 20px; /* Espacio entre los cuadrados */
+  }
+  
+  body {
+    background-color: #e0f7fa; /* Cambia el color de fondo aquí */
+    margin: 0; /* Elimina márgenes por defecto */
+    font-family: Arial, sans-serif; /* Ajusta la fuente si lo deseas */
+  }
+  
+  .link {
+    color: rgb(0, 0, 0);               /* Color del texto */
+    text-decoration: none;     /* Sin subrayado */
+    font-weight: bold;         /* Texto en negrita */
+    padding: 5px 10px;        /* Espacio alrededor del texto */
+    border-radius: 4px;       /* Esquinas redondeadas */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .link:hover {
+    background-color: lightblue; /* Color de fondo al pasar el mouse */
+  }
+  
